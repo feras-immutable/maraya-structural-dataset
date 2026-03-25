@@ -1,6 +1,6 @@
 # Maraya Structural Dataset
 
-_The Maraya Structural Dataset maps the compositional centers of all 114 surahs, enabling exploration of Qur'anic architecture through an open, reproducible framework._
+_The Maraya Structural Dataset maps the compositional centers of all 114 surahs of the Qur'an, enabling exploration of Qur'anic architecture through an open, reproducible framework._
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
@@ -16,7 +16,12 @@ The dataset includes:
 - **Block maps** encoding the ring-composition or chiastic structure of each surah as labeled, role-tagged segments
 - **Signal tables** recording per-verse signals (thematic shifts, lexical markers, mirror patterns, discourse moves, prosodic features)
 - **Structure summaries** capturing the detected pattern, frame type, and block map per surah
-- **Supporting data**: surah families, semantic profiles, metadata, and normative centrality classifications
+
+---
+
+## Why this dataset exists
+
+The Qur'an has long been studied for compositional structure, including ring composition, chiastic symmetry, and thematic centering. However, no corpus-wide dataset documenting structural pivots across all 114 surahs previously existed. The Maraya Structural Dataset provides a unified, reproducible registry enabling comparative analysis, visualization, and further research.
 
 ---
 
@@ -31,21 +36,23 @@ Each surah entry in `data/maraya_structural_dataset.json` contains a `pivot` obj
   "verse_count": 7,
   "pivot": {
     "verse": 5,
-    "verse_ar": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
     "confidence": "high",
     "signal_count": 4,
-    "signals": {
-      "theme": true,
-      "grammar": true,
-      "prosody": true,
-      "mirror": true
-    },
-    "notes": "Only unmirrored verse; doubled pronominal fronting unique in surah; shortest verse by syllable count; grammatical person pivot (3rd→2nd)",
+    "signals": { "theme": true, "grammar": true, "prosody": true, "mirror": true },
     "axis_type": "geometric_center",
-    "center_logic": "single_concentration",
     "offset": 0.2143
   }
 }
+```
+
+The block map shows how Al-Fatiha's 7 verses form a ring around the pivot:
+
+```
+  A  | 1-3  | Praise of the Lord
+  B  | 4    | Lord of Judgment
+  X  | 5    | Pivot: Worship and reliance
+  B' | 6    | Prayer for guidance
+  A' | 7    | The three paths
 ```
 
 Load all 114 surahs in Python:
@@ -68,12 +75,17 @@ for surah in data["surahs"]:
 |------|-------------|
 | `data/maraya_structural_dataset.json` | Primary dataset. 114 surah entries with pivot analysis, boundaries, signal tables, and structure summaries. |
 | `data/blockMap.json` | Block-level ring/chiastic maps for all 114 surahs. Each surah is a labeled sequence of role-tagged blocks with verse ranges. |
-| `data/surah_metadata.json` | Per-surah metadata: Arabic and English names, name meaning, revelation phase (Meccan/Medinan), revelation order, and juz range. |
-| `data/surah_families.json` | Typological family classification for all 114 surahs across 7 family types, with pivot function and center logic fields. |
-| `data/semantic_profiles.json` | Normalized semantic density scores (early, pivot, late sections) and pivot advantage per surah. |
-| `data/normative_centrality/classifications_claude.json` | Claude-generated pivot and control verse category classifications for all 114 surahs. |
-| `data/normative_centrality/classifications_gpt4.txt` | GPT-4-generated pivot and control verse category classifications (JSON lines). |
-| `data/normative_centrality/pivot_classification_input.json` | Input records used for both model classification runs: pivot and control verse text with metadata. |
+
+---
+
+## Use cases
+
+- Structural Qur'an readers and visualizations
+- Hifz (memorization) structure aids
+- Structural tafsir research
+- Academic comparative analysis
+- Plugin and tool development
+- Cross-surah pattern exploration
 
 ---
 
@@ -93,7 +105,7 @@ Each pivot was identified through a **six-pass convergence framework** applied i
 4. **Discourse** — person, mode, or register shift
 5. **Prosody** — rhythm, rhyme class, syllabic weight
 
-A pivot is assigned `high` confidence when 4 or more independent signals converge at a single verse, `medium` when 2–3 signals converge within a 2-verse window, and `low` when a single unconfirmed signal is present.
+A pivot is assigned `high` confidence when 4 or more independent signals converge at a single verse, `medium` when 2-3 signals converge within a 2-verse window, and `low` when a single unconfirmed signal is present.
 
 See [methodology/six-pass-framework.md](methodology/six-pass-framework.md) for the full protocol.
 
@@ -119,9 +131,9 @@ See [CITATION.cff](CITATION.cff) for machine-readable format.
 
 ## Links
 
-- **Maraya**: [PLACEHOLDER_URL]
-- **Ayah Labs**: [https://ayahlabs.com](https://ayahlabs.com)
-- **Zenodo**: [PLACEHOLDER_DOI]
+- **Maraya**: PLACEHOLDER_URL
+- **Ayah Labs**: [ayahlabs.com](https://ayahlabs.com)
+- **Zenodo**: PLACEHOLDER_DOI
 
 ---
 
