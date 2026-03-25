@@ -8,17 +8,34 @@ Ayah Labs | Methodology Document v1.0 | March 2026
 
 ## 1. Overview
 
-The Six-Pass Structural Analysis is a systematic methodology for detecting, verifying, and characterizing ring composition (chiastic structure) in Qur'anic surahs. It applies five independent signal-detection passes plus a convergence assessment to each surah, producing a structural profile that includes: the pivot location, signal count, center-offset, detected pattern, and cross-surah connections.
+The Six-Pass Structural Analysis is a systematic methodology for detecting, verifying, and characterizing ring composition (chiastic structure) in Qur'anic surahs. It applies five independent signal-detection passes plus a convergence synthesis to each surah, producing a structural profile that includes: the pivot location, signal count, center-offset, detected pattern, and cross-surah connections.
 
 The methodology was developed through the iterative analysis of all 114 surahs of the Qur'an (6,236 verses) and validated against two non-Qur'anic control texts: the Sermon on the Mount (Matthew 5-7) and the Genesis Flood Narrative (Genesis 6:9-9:17).
 
 **Core principle:** A structural center is confirmed only when multiple independent signals converge at the same location. No single pass is sufficient; convergence is the criterion.
 
+Ring composition produces a nested mirror structure around a central pivot:
+
+```
+  A   ───────────────────────────  A'
+    B  ────────────────────────  B'
+      C  ──────────────────  C'
+             X (pivot)
+```
+
+Each outer pair (A/A', B/B', C/C') shares thematic, lexical, or structural correspondence. The pivot (X) sits at the center.
+
 ---
 
-## 2. The Six Passes
+## 2. AI Assistance Transparency
 
-Each surah is analyzed through six sequential passes. Passes 1-5 each detect a distinct type of structural signal. Pass 6 synthesizes the findings into a convergence assessment.
+This analysis was conducted with the assistance of Claude (Anthropic). The AI was used as a research tool for: systematic signal detection across all passes, consistency checking across 114 surahs, and documentation of findings. All analytical judgments (pivot identification, signal assessment, pattern classification) were made through iterative human-AI collaboration, with the human analyst directing the investigation and validating outputs against primary Arabic text and prior scholarship.
+
+---
+
+## 3. The Six Passes
+
+Each surah is analyzed through six sequential passes. Passes 1-5 each detect a distinct type of structural signal. Pass 6 is not a new signal but a convergence synthesis of the five independent detection passes.
 
 ### Pass 1: Thematic Shift Detection + Block Map
 
@@ -67,17 +84,17 @@ Each surah is analyzed through six sequential passes. Passes 1-5 each detect a d
 
 **Output:** A zone analysis describing the rhyme arc (opening to closing), the pivot terminal, and the governing sound family. A mandatory `signal_table` is produced for surahs where prosodic data is particularly rich.
 
-### Pass 6: Novel Architecture Flags + Signal Convergence
+### Pass 6: Additional Structural Indicators + Signal Convergence
 
-**Objective:** Synthesize all five signals into a convergence assessment and flag any novel architectural features unique to this surah.
+**Objective:** Synthesize all five signals into a convergence assessment and flag any additional structural indicators unique to this surah.
 
-**Method:** Construct a Signal Convergence Table with five rows (Theme / Lexical / Mirror / Discourse / Rhyme), each assessed at the candidate pivot. Each signal is marked as present or absent with a content description. The total signal count (out of 5) determines confidence. Additionally, list novel architecture flags: unprecedented verses, unique structural features, record-setting metrics.
+**Method:** Construct a Signal Convergence Table with five rows (Theme / Lexical / Mirror / Discourse / Rhyme), each assessed at the candidate pivot. Each signal is marked as present or absent with a content description. The total signal count (out of 5) determines confidence. Additionally, list additional structural indicators: unprecedented verses, unique structural features, record-setting metrics.
 
-**Output:** Signal Convergence Table, architecture flags, cross-surah flags (connecting this surah's findings to other surahs), a Structure Summary table, and a Pivot Survey Entry.
+**Output:** Signal Convergence Table, structural indicators, cross-surah flags (connecting this surah's findings to other surahs), a Structure Summary table, and a Pivot Survey Entry.
 
 ---
 
-## 3. Confidence Criteria
+## 4. Confidence Criteria
 
 The confidence rating is determined by signal convergence at the candidate pivot:
 
@@ -88,11 +105,11 @@ The confidence rating is determined by signal convergence at the candidate pivot
 | 3/5 | Three signals | Partial ring or hybrid structure |
 | 2/5 or below | Two or fewer | Ring composition not confirmed |
 
-Across the 114-surah Qur'anic corpus, every surah achieved 5/5 signal convergence at its detected pivot.
+Across the 114-surah corpus, each identified pivot location satisfies the convergence criteria, with multiple independent signals aligning at a single structural point.
 
 ---
 
-## 4. Center Logic Classifications
+## 5. Center Logic Classifications
 
 The `center_logic` field classifies how the pivot operates within the ring structure:
 
@@ -107,7 +124,7 @@ The `center_logic` field classifies how the pivot operates within the ring struc
 
 ---
 
-## 5. Control Validation
+## 6. Control Validation
 
 The methodology was validated against two non-Qur'anic control texts to test its discriminatory power:
 
@@ -119,18 +136,12 @@ Result: 3/5 signal convergence. Ring composition IS detected (confirmed by Wenha
 
 | Metric | Qur'an (114 surahs) | Genesis Flood | Sermon on Mount |
 |--------|---------------------|---------------|-----------------|
-| Ring composition | 114/114 (100%) | Yes | No |
-| Lexical framing | 114/114 | Yes | No |
-| Mirror structure | 114/114 | Yes | No |
-| Discourse convergence | 114/114 | No (1 mode) | No |
-| Prosodic signal | 114/114 | No (prose) | No |
-| Signal convergence | 5/5 all 114 | 3/5 | 1-2/5 |
-
----
-
-## 6. AI Assistance Transparency
-
-This analysis was conducted with the assistance of Claude (Anthropic). The AI was used as a research tool for: systematic signal detection across all passes, consistency checking across 114 surahs, and documentation of findings. All analytical judgments (pivot identification, signal assessment, pattern classification) were made through iterative human-AI collaboration, with the human analyst directing the investigation and validating outputs against primary Arabic text and prior scholarship.
+| Ring composition | Detected in all 114 | Yes | No |
+| Lexical framing | Detected in all 114 | Yes | No |
+| Mirror structure | Detected in all 114 | Yes | No |
+| Discourse convergence | Detected in all 114 | No (1 mode) | No |
+| Prosodic signal | Detected in all 114 | No (prose) | No |
+| Signal convergence | High (4-5/5) | 3/5 | 1-2/5 |
 
 ---
 
