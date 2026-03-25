@@ -12,7 +12,7 @@ repository-code: https://github.com/feras-immutable/maraya-structural-dataset
 url: https://ayahlabs.com
 identifiers:
   - type: doi
-    value: PLACEHOLDER_DOI
+    value: 10.5281/zenodo.19224437
 keywords:
   - Quran
   - structural analysis

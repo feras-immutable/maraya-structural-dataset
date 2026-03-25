@@ -131,9 +131,9 @@ See [CITATION.cff](CITATION.cff) for machine-readable format.
 
 ## Links
 
-- **Maraya**: PLACEHOLDER_URL
+- **Maraya**: https://maraya.app
 - **Ayah Labs**: [ayahlabs.com](https://ayahlabs.com)
-- **Zenodo**: PLACEHOLDER_DOI
+- **Zenodo**: https://doi.org/10.5281/zenodo.19224437
 
 ---
 
