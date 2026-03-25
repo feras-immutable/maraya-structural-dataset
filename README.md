@@ -120,7 +120,7 @@ See [methodology/six-pass-framework.md](methodology/six-pass-framework.md) for t
   year      = {2026},
   publisher = {Ayah Labs},
   version   = {1.0.0},
-  url       = {https://github.com/ayahlabs/maraya-structural-dataset},
+  url       = {https://github.com/feras-immutable/maraya-structural-dataset},
   license   = {CC-BY-4.0}
 }
 ```

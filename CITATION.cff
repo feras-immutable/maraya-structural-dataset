@@ -2,13 +2,13 @@ cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 title: "Maraya Structural Dataset"
 version: 1.0.0
-date-released: PLACEHOLDER_DATE
+date-released: 2026-03-25
 authors:
   - family-names: Mansi
     given-names: Feras
     affiliation: Ayah Labs
 license: CC-BY-4.0
-repository-code: https://github.com/ayahlabs/maraya-structural-dataset
+repository-code: https://github.com/feras-immutable/maraya-structural-dataset
 url: https://ayahlabs.com
 identifiers:
   - type: doi

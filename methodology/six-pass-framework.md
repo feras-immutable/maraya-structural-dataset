@@ -161,6 +161,6 @@ The six-pass methodology synthesizes these traditions into a reproducible, multi
 
 ## Links
 
-- **Dataset:** [github.com/ayahlabs/maraya-structural-dataset](https://github.com/ayahlabs/maraya-structural-dataset)
+- **Dataset:** [github.com/ayahlabs/maraya-structural-dataset](https://github.com/feras-immutable/maraya-structural-dataset)
 - **Maraya** (interactive viewer): PLACEHOLDER_URL
 - **Ayah Labs:** [ayahlabs.com](https://ayahlabs.com)
