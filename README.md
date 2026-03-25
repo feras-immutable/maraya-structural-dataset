@@ -102,10 +102,10 @@ See [methodology/six-pass-framework.md](methodology/six-pass-framework.md) for t
 ## Citation
 
 ```bibtex
-@dataset{mansi2025maraya,
+@dataset{mansi2026maraya,
   author    = {Mansi, Feras},
   title     = {Maraya Structural Dataset},
-  year      = {2025},
+  year      = {2026},
   publisher = {Ayah Labs},
   version   = {1.0.0},
   url       = {https://github.com/ayahlabs/maraya-structural-dataset},
